@@ -1,0 +1,478 @@
+/*
+Licensed Materials - Property of IBM
+
+IBM SPSS Products: Data Collection
+
+(C) Copyright IBM Corp. 2001, 2011
+
+US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP 
+Schedule Contract with IBM Corp.
+*/
+BODY
+{
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-COLOR: white;
+}
+
+TABLE
+{
+    BORDER-COLLAPSE: collapse;
+}
+
+TD.Cell
+{
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT:1px;
+    BORDER-RIGHT: black 0.5pt solid;
+    BORDER-TOP: black 0.5pt solid;
+    BORDER-LEFT: black 0.5pt solid;
+    BORDER-BOTTOM: black 0.5pt solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+    COLOR: black;
+    VERTICAL-ALIGN: middle;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+    BACKGROUND: white;
+    WIDTH: 70px;
+}
+TD.CellTop
+{
+    BORDER-BOTTOM: none;
+}
+TD.CellBottom
+{
+    BORDER-TOP: none;
+}
+TD.CellMiddle
+{
+    BORDER-TOP: none;
+    BORDER-BOTTOM: none;
+}
+TD.CellTopBottom
+{
+}
+TD.CellElementCategory,
+TD.CellElementMean,
+TD.CellElementStdDev,
+TD.CellElementStdErr,
+TD.CellElementSampleVar,
+TD.CellElementTotal,
+TD.CellElementSubTotal,
+TD.CellElementText,
+TD.CellElementNetDiffs,
+TD.CellElementPairedPrefs,
+TD.CellElementOtherDerived,
+TD.CellElementMinimum,
+TD.CellElementMaximum,
+TD.CellElementNet,
+TD.CellElementCombine,
+TD.CellElementExpression,
+TD.CellElementTableStatistic,
+TD.CellElementNumeric,
+TD.CellElementDerived,
+TD.CellElementSum,
+TD.CellElementMedian,
+TD.CellElementPercentile,
+TD.CellElementMode
+
+{
+}
+TD.CellElementBase,
+TD.CellElementUnweightedBase,
+TD.CellElementEffectiveBase
+{
+    FONT-WEIGHT: bold;
+    BACKGROUND: #BBC7D3;
+}
+TD.CellItemCount,
+TD.CellItemUnweightedCount,
+TD.CellItemSum,
+TD.CellItemMinimum,
+TD.CellItemMaximum,
+TD.CellItemMean,
+TD.CellItemRange,
+TD.CellItemMode,
+TD.CellItemMedian,
+TD.CellItemPercentile,
+TD.CellItemStdDev,
+TD.CellItemStdErr,
+TD.CellItemVariance,
+TD.CellItemResiduals,
+TD.CellItemAdjustedResiduals,
+TD.CellItemExpectedValues,
+TD.CellItemValidN,
+TD.CellItemIndices,
+TD.CellItemColPropResults
+{
+}
+TD.CellItemColPercent,
+TD.CellItemRowPercent,
+TD.CellItemTotalPercent,
+TD.CellItemCumColPercent,
+TD.CellItemCumRowPercent
+{
+   FONT-STYLE: italic; 
+}
+TD.CellItemProfileResult
+{
+   TEXT-ALIGN: left;
+   VERTICAL-ALIGN: top;
+   WIDTH: auto;
+}
+
+TD.Axis
+{
+    PADDING-TOP: 1px;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT:2px;
+    BORDER-RIGHT: black 1pt solid;
+    BORDER-TOP: black 1pt solid;
+    BORDER-LEFT: black 1pt solid;
+    BORDER-BOTTOM: black 1pt solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    COLOR: black;
+    VERTICAL-ALIGN: middle;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+    BACKGROUND: white;
+}
+TD.AxisLabelTop
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    COLOR: white;
+    BACKGROUND: #CF2E4D;
+}
+TD.AxisLabelSide
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    COLOR: white;
+    BACKGROUND: #CF2E4D;
+    WRITING-MODE: tb-rl;
+}
+TD.AxisLabelHorizontalSide
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    COLOR: white;
+    BACKGROUND: #CF2E4D;
+    TEXT-ALIGN: left;
+}
+TD.AxisLabelIndentSide
+{
+    BACKGROUND: #CF2E4D;
+}
+TD.AxisElementTop
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    COLOR: white;
+    BACKGROUND: #657F8E;
+}
+TD.AxisElementSide
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+    COLOR: white;
+    BACKGROUND: #657F8E;
+    TEXT-ALIGN: left;
+}
+TD.AxisSubElementLevel1Top
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, sans-serif;
+}
+TD.AxisSubElementLevel2Top
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 7pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+}
+TD.AxisSubElementLevel3Top
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 7pt;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, sans-serif;
+}
+TD.AxisSubElementLevel4Top
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 6pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+}
+TD.AxisSubElementLevel5Top
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 6pt;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, sans-serif;
+}
+TD.AxisSubElementLevel1Side
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, sans-serif;
+    TEXT-ALIGN: left;
+    PADDING-LEFT:10px;
+}
+TD.AxisSubElementLevel2Side
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 7pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+    TEXT-ALIGN: left;
+    PADDING-LEFT:20px;
+}
+TD.AxisSubElementLevel3Side
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 7pt;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, sans-serif;
+    TEXT-ALIGN: left;
+    PADDING-LEFT:30px;
+}
+TD.AxisSubElementLevel4Side
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 6pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+    TEXT-ALIGN: left;
+    PADDING-LEFT:40px;
+}
+TD.AxisSubElementLevel5Side
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 6pt;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, sans-serif;
+    TEXT-ALIGN: left;
+    PADDING-LEFT:50px;
+}
+TD.AxisElementCategory,
+TD.AxisElementMean,
+TD.AxisElementStdDev,
+TD.AxisElementStdErr,
+TD.AxisElementSampleVar,
+TD.AxisElementTotal,
+TD.AxisElementSubTotal,
+TD.AxisElementText,
+TD.AxisElementNetDiffs,
+TD.AxisElementPairedPrefs,
+TD.AxisElementOtherDerived,
+TD.AxisElementMinimum,
+TD.AxisElementMaximum,
+TD.AxisElementNet,
+TD.AxisElementCombine,
+TD.AxisElementExpression,
+TD.AxisElementTableStatistic,
+TD.AxisElementNumeric,
+TD.AxisElementDerived,
+TD.AxisElementSum,
+TD.AxisElementMedian,
+TD.AxisElementPercentile,
+TD.AxisElementMode
+{
+}
+TD.AxisElementBase,
+TD.AxisElementUnweightedBase,
+TD.AxisElementEffectiveBase
+{
+    FONT-WEIGHT: bold;
+    COLOR: black;
+    BACKGROUND: #BBC7D3;
+}
+
+TD.AxisColumnHeading
+{
+    FONT-WEIGHT: bold;
+}
+
+TD.AxisElementSortedOn
+{
+}
+
+TD.TableOfContents
+{
+    PADDING-TOP: 2px;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT:2px;
+    BORDER: black 0.5pt solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+    COLOR: black;
+    VERTICAL-ALIGN: middle;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+    BACKGROUND: white;
+}
+TD.TableOfContentsTitle
+{
+    PADDING-TOP: 2px;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT:2px;
+    BORDER: black 0.5pt solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+    COLOR: black;
+    VERTICAL-ALIGN: middle;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+    BACKGROUND: white;
+}
+
+TD.Annotation
+{
+    VERTICAL-ALIGN: top;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+}
+TD.TitleHeader
+{
+    HEIGHT: 50px;
+    TEXT-ALIGN: left;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: bold;
+}
+TD.LeftHeader
+{
+    WIDTH: 30%;
+    TEXT-ALIGN: left;
+}
+TD.CenterHeader
+{
+    WIDTH: 40%;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle;
+}
+TD.RightHeader
+{
+    WIDTH: 30%;
+    TEXT-ALIGN: right;
+    VERTICAL-ALIGN: bottom;
+}
+TD.TitleFooter
+{
+    TEXT-ALIGN: left;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+}
+TD.LeftFooter
+{
+    WIDTH: 30%;
+    TEXT-ALIGN: left;
+}
+TD.CenterFooter
+{
+    WIDTH: 40%;
+    TEXT-ALIGN: center;
+}
+TD.RightFooter
+{
+    WIDTH: 30%;
+    TEXT-ALIGN: right;
+}
+
+A.TopLink
+{
+    VISIBILITY: hidden;
+}
+
+H1.SurveyName
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+}
+H1.SurveyDescription
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+}
+
+IMG.TableImage
+{
+    BACKGROUND-COLOR: white;
+    BORDER: 0;
+}
+
+IMG.TableLogo
+{
+    BACKGROUND-COLOR: white;
+}
+
+.HorizontalSpacer
+{
+    HEIGHT: 5px
+}
+.VerticalSpacer
+{
+    WIDTH: 5px
+} bold;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, sans-serif;
+}
+H1.SurveyDescription
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, sans-serif;
+}
+
+IMG.TableImage
+{
+    BACKGROUND-COLOR: white;
+    BORDER: 0;
+}
+
+IMG.TableLogo
+{
+    BACKGROUND-COLOR: white;
+}
+
+.HorizontalSpacer
+{
+    HEIGHT: 5px
+}
+.VerticalSpacer
+{
+    WIDTH: 5px
+}
